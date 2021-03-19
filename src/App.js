@@ -69,7 +69,6 @@ class App extends React.Component{
     if(cityN && countryN){
       const apiCall=await fetch(`https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q=${cityN},${countryN}&appid=${apiKey}`);
     const response = await apiCall.json();
-    console.log(response);
     this.setState({
       /*city:response.name,
       country:response.sys.country,*/
