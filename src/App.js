@@ -5,6 +5,8 @@ import Weather from './Components/wheather.component';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'weather-icons/css/weather-icons.css';
 import Form from './Components/form.component';
+import Footer from './Components/Footer';
+
 
 const apiKey="3f376cb0d159d3b9803a475cab52abbb";
 //api.openweathermap.org/data/2.5/weather?q=London&appid={API key}
@@ -99,7 +101,7 @@ class App extends React.Component{
      icon:this.state.icon
     }}
      />
-    
+    <Footer/>
   </div>);
   }
 }
